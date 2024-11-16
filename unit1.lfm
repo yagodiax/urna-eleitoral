@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = -934
+  Left = -985
   Height = 477
-  Top = 108
+  Top = 105
   Width = 785
   Caption = 'Form1'
   ClientHeight = 477
@@ -98,29 +98,22 @@ object Form1: TForm1
     TabOrder = 9
     OnClick = Button10Click
   end
-  object Button11: TButton
+  object Button12: TButton
     Left = 432
     Height = 25
-    Top = 416
-    Width = 57
-    Caption = 'Branco'
-    TabOrder = 10
-  end
-  object Button12: TButton
-    Left = 529
-    Height = 25
-    Top = 416
+    Top = 352
     Width = 57
     Caption = 'Corrige'
-    TabOrder = 11
+    TabOrder = 10
+    OnClick = Button12Click
   end
   object ButtonVerificar: TButton
     Left = 625
     Height = 25
-    Top = 416
+    Top = 352
     Width = 57
     Caption = 'Confirma'
-    TabOrder = 12
+    TabOrder = 11
     OnClick = ButtonVerificarClick
   end
   object Image1: TImage
@@ -718,10 +711,10 @@ object Form1: TForm1
   end
   object Label1: TLabel
     Left = 8
-    Height = 90
-    Top = 384
-    Width = 85
-    Caption = 'Lula - 13'#13#10'Bolsonaro - 22'#13#10'Pablo Marçal - '#13#10'Renato Cariani -'#13#10'Felipe Neto -'#13#10'Putin -'
+    Height = 75
+    Top = 392
+    Width = 100
+    Caption = 'Renato Cariani - 12'#13#10'Kanye West - 05'#13#10'Lula - 13'#13#10'Bolsonaro - 22'#13#10'Putin -'
   end
   object Label2: TLabel
     Left = 160
@@ -753,11 +746,12 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label4: TLabel
-    Left = 136
+    Left = 80
     Height = 25
     Top = 312
-    Width = 140
+    Width = 248
     Alignment = taCenter
+    Anchors = [akTop, akLeft, akRight, akBottom]
     Caption = 'Nome do Eleitor'
     Font.CharSet = ANSI_CHARSET
     Font.Height = -19

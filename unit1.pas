@@ -18,7 +18,6 @@ type
   TForm1 = class(TForm)
     Button1: TButton;
     Button10: TButton;
-    Button11: TButton;
     Button12: TButton;
     ButtonVerificar: TButton;
     Button2: TButton;
@@ -35,6 +34,7 @@ type
     Label3: TLabel;
     Label4: TLabel;
     procedure Button10Click(Sender: TObject);
+    procedure Button12Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -64,19 +64,23 @@ implementation
 
 procedure TForm1.CarregarCandidatos;
 begin // Carregar candidatos e suas imagens
-  SetLength(FCandidatos, 3); // Exemplo com 3 candidatos
+  SetLength(FCandidatos, 4); // Exemplo com 3 candidatos
 
   FCandidatos[0].Numero := 12;
   FCandidatos[0].Nome := 'Renato Cariani';
   FCandidatos[0].Imagem := 'candidatos\renato.jpg';
 
-  FCandidatos[1].Numero := 34;
-  FCandidatos[1].Nome := 'Candidato 2';
-  FCandidatos[1].Imagem := 'caminho_para_imagem_2.png';
+  FCandidatos[1].Numero := 22;
+  FCandidatos[1].Nome := 'Kanye West';
+  FCandidatos[1].Imagem := 'candidatos\kanye.jpg';
 
-  FCandidatos[2].Numero := 56;
-  FCandidatos[2].Nome := 'Candidato 3';
-  FCandidatos[2].Imagem := 'caminho_para_imagem_3.png';
+  FCandidatos[2].Numero := 13;
+  FCandidatos[2].Nome := 'Lula';
+  FCandidatos[2].Imagem := 'candidatos\lula.jpg';
+
+  FCandidatos[3].Numero := 17;
+  FCandidatos[3].Nome := 'Bolsonaro';
+  FCandidatos[3].Imagem := 'candidatos\bolsonaro.jpg';
 end;
 
 procedure TForm1.VerificarCandidato(Numero: Integer);
@@ -137,6 +141,11 @@ procedure TForm1.Button10Click(Sender: TObject);
 begin
     if Sender is TButton then
         AddNumber((Sender as TButton).Caption);
+end;
+
+procedure TForm1.Button12Click(Sender: TObject);
+begin
+
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
